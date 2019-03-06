@@ -9,12 +9,24 @@ jobs:
           name: Install node modules
           command: npm install
   test:
+    docker:
+      - image: node:8.9
     steps:
+      - checkout
+      - run:
+          name: Install node modules
+          command: npm install
       - run:
           name: Run tests
           command: npm run test
   deploy:
+    docker:
+      - image: node:8.9
     steps:
+      - checkout
+      - run:
+          name: Install node modules
+          command: npm install
       - run:
           name: Deploy to gh-pages
           command: npm run deploy
