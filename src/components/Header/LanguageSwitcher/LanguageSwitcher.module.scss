@@ -1,0 +1,40 @@
+@import '../../../globalStyles/colors.scss';
+
+.languageSwitcher {
+    border: 2px solid $red;
+    border-radius: 100px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    background-color: $gray;
+    display: flex;
+    padding: 5px;
+
+    .switchBlocker {
+        position: absolute;
+        background-color: $black;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: all .1s linear;
+        border-radius: 100px 0 0 100px;
+        border-right: 1px solid $red;
+        &.switchBlockerRight {
+            border-right: none;
+            border-left: 1px solid $red;
+            left: 50%;
+            border-radius: 0 100px 100px 0;
+        }
+    }
+
+    img {
+        margin: 0 10px;
+
+        &.languageOff {
+            transition: all 0.1s ease;
+            filter: grayscale(100%);
+            opacity: .5;
+        }
+    }
+}

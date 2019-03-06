@@ -16,21 +16,53 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
-    "props": Object {},
+    "nodeType": "function",
+    "props": Object {
+      "children": <Header
+        handleLanguageSwitch={[Function]}
+        selectedLanguage="EN"
+      />,
+    },
     "ref": null,
-    "rendered": null,
-    "type": "div",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "handleLanguageSwitch": [Function],
+        "selectedLanguage": "EN",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {},
+      "nodeType": "function",
+      "props": Object {
+        "children": <Header
+          handleLanguageSwitch={[Function]}
+          selectedLanguage="EN"
+        />,
+      },
       "ref": null,
-      "rendered": null,
-      "type": "div",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleLanguageSwitch": [Function],
+          "selectedLanguage": "EN",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

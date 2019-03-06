@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ selectedLanguage, setSelectedLanguage }) => {
+import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
+
+import { header } from './Header.module.scss';
+
+const Header = ({ selectedLanguage, handleLanguageSwitch }) => {
   return (
-    <header></header>
+    <header className={header}>
+      <LanguageSwitcher selectedLanguage={selectedLanguage} handleLanguageSwitch={handleLanguageSwitch} />
+    </header>
   )
 }
 
 Header.propTypes = {
   selectedLanguage: PropTypes.string.isRequired,
-  setSelectedLanguage: PropTypes.func.isRequired
+  handleLanguageSwitch: PropTypes.func.isRequired
 }
 
 export default Header;
