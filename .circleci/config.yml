@@ -14,8 +14,6 @@ jobs:
           name: Run tests
           command: npm run test
   deploy:
-    branches:
-      only: master
     steps:
       - run:
           name: Deploy to gh-pages
@@ -29,5 +27,8 @@ workflows:
           requires:
             - build
       - deploy:
+          filter:
+            branches:
+              only: master
           requires:
             - test
