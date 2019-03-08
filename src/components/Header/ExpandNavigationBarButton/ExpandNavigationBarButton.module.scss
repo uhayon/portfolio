@@ -1,0 +1,28 @@
+@import '../../../globalStyles/colors.scss';
+
+.navigationBarExpandButton {
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.hidden {
+        display: none;
+    }
+
+    rect {
+        transition: fill 0.2s ease;
+        fill: $white;
+    }
+
+    svg {
+        height: 100%;
+        width: auto;
+    }
+
+    &:hover {
+        rect {
+            fill: $red;
+        }
+    }
+}

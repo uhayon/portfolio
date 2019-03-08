@@ -1,0 +1,52 @@
+@import '../../../globalStyles/colors.scss';
+
+.sidebarContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 1001;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+    &.sidebarExpanded {
+        display: block;
+        opacity: 1;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    transition: width 0.3s ease-in;
+    height: 100%;
+    position: absolute;
+    background-color: $gray;
+    top: 0;
+    right: 0;
+    z-index: 1002;
+    min-height: 100vh;
+    
+    &.sidebarOpen {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 500px) {
+        &.sidebarOpen {
+            width: 250px;
+        }
+    }
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
