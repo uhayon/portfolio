@@ -23,18 +23,35 @@
 .sidebar {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 0;
+    padding: 0;
     transition: width 0.3s ease-in;
-    height: 100%;
     position: absolute;
-    background-color: $gray;
+    background-color: $gray-dark;
     top: 0;
     right: 0;
     z-index: 1002;
     min-height: 100vh;
-    
+    overflow: auto;
+    padding: 1rem 0;
+    > * {
+        opacity: 0;
+    }
+
     &.sidebarOpen {
         width: 100%;
+        padding: 1rem .5rem;
+
+        > * {
+            opacity: 1;
+        }
+
+        .closeButtonContainer {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
     }
 
     @media screen and (min-width: 500px) {
@@ -44,7 +61,7 @@
     }
 }
 
-.navBar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;

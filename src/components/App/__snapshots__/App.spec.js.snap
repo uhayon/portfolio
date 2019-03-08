@@ -27,7 +27,7 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "handleLanguageSwitch": [Function],
         "selectedLanguage": "EN",
@@ -53,7 +53,7 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "handleLanguageSwitch": [Function],
           "selectedLanguage": "EN",

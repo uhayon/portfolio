@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import NavigationBar from './NavigationBar/NavigationBar';
 import Logo from '../Logo/Logo';
-import ExpandNavigationBarButton from './ExpandNavigationBarButton/ExpandNavigationBarButton';
+import ToggleNavigationBarButton from './ToggleNavigationBarButton/ToggleNavigationBarButton';
+
+import navigationButtons from './NavigationBarButtons.json';
 
 import styles from './Header.module.scss';
 
@@ -62,7 +64,8 @@ class Header extends React.Component {
         <a href='#root' className={styles.linkLogo}>
           <Logo />
         </a>
-        <ExpandNavigationBarButton
+        <ToggleNavigationBarButton
+          isExpandButton
           isMobileScreen={isMobileScreen}
           handleNavButtonPress={this.handleToggleNavigationBarExpansion} />
         <NavigationBar 
@@ -70,7 +73,8 @@ class Header extends React.Component {
           toggleSidebarExpansion={this.handleToggleNavigationBarExpansion}
           handleLanguageSwitch={handleLanguageSwitch}
           isExpanded={navigationBarExpanded} 
-          isSideBar={isMobileScreen} />
+          isSideBar={isMobileScreen}
+          buttons={navigationButtons} />
       </header>
     );
   }

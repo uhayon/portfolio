@@ -1,7 +1,7 @@
 @import '../../../globalStyles/colors.scss';
 
-.navigationBarExpandButton {
-    height: 35px;
+.navigationBarToggleButton {
+    height: 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -10,7 +10,8 @@
         display: none;
     }
 
-    rect {
+    rect,
+    path {
         transition: fill 0.2s ease;
         fill: $white;
     }
@@ -21,7 +22,8 @@
     }
 
     &:hover {
-        rect {
+        rect,
+        path {
             fill: $red;
         }
     }
