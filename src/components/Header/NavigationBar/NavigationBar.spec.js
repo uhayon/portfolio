@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import { shallow, mount } from 'enzyme';
 
 import NavigationBar from './NavigationBar';
