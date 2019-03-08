@@ -1,0 +1,24 @@
+@import '../../../../../globalStyles/colors.scss';
+
+.navigationButton {
+    padding: 1rem 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &:hover {
+        .link {
+            color: $red;
+        }
+    }
+
+    .link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $white;
+        transition: color 0.2s ease-in;
+    }
+}

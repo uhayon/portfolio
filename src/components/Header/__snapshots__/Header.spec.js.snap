@@ -21,25 +21,128 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <LanguageSwitcher
-        handleLanguageSwitch={[MockFunction]}
-        selectedLanguage="EN"
-      />,
+      "children": Array [
+        <a
+          className="linkLogo"
+          href="#root"
+        >
+          <Logo />
+        </a>,
+        <ToggleNavigationBarButton
+          handleNavButtonPress={[Function]}
+          isExpandButton={true}
+          isMobileScreen={false}
+        />,
+        <NavigationBar
+          buttons={
+            Array [
+              Object {
+                "sectionId": "section-skills",
+                "title": Object {
+                  "EN": "Skills",
+                  "ES": "Habilidades",
+                },
+              },
+              Object {
+                "sectionId": "section-projects",
+                "title": Object {
+                  "EN": "Projects",
+                  "ES": "Proyectos",
+                },
+              },
+              Object {
+                "sectionId": "section-contact",
+                "title": Object {
+                  "EN": "Contact Me",
+                  "ES": "Contactame",
+                },
+              },
+            ]
+          }
+          handleLanguageSwitch={[MockFunction]}
+          isExpanded={false}
+          isSideBar={false}
+          selectedLanguage="EN"
+          toggleSidebarExpansion={[Function]}
+        />,
+      ],
       "className": "header",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "handleLanguageSwitch": [MockFunction],
-        "selectedLanguage": "EN",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Logo />,
+          "className": "linkLogo",
+          "href": "#root",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleNavButtonPress": [Function],
+          "isExpandButton": true,
+          "isMobileScreen": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "buttons": Array [
+            Object {
+              "sectionId": "section-skills",
+              "title": Object {
+                "EN": "Skills",
+                "ES": "Habilidades",
+              },
+            },
+            Object {
+              "sectionId": "section-projects",
+              "title": Object {
+                "EN": "Projects",
+                "ES": "Proyectos",
+              },
+            },
+            Object {
+              "sectionId": "section-contact",
+              "title": Object {
+                "EN": "Contact Me",
+                "ES": "Contactame",
+              },
+            },
+          ],
+          "handleLanguageSwitch": [MockFunction],
+          "isExpanded": false,
+          "isSideBar": false,
+          "selectedLanguage": "EN",
+          "toggleSidebarExpansion": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "header",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -48,25 +151,128 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <LanguageSwitcher
-          handleLanguageSwitch={[MockFunction]}
-          selectedLanguage="EN"
-        />,
+        "children": Array [
+          <a
+            className="linkLogo"
+            href="#root"
+          >
+            <Logo />
+          </a>,
+          <ToggleNavigationBarButton
+            handleNavButtonPress={[Function]}
+            isExpandButton={true}
+            isMobileScreen={false}
+          />,
+          <NavigationBar
+            buttons={
+              Array [
+                Object {
+                  "sectionId": "section-skills",
+                  "title": Object {
+                    "EN": "Skills",
+                    "ES": "Habilidades",
+                  },
+                },
+                Object {
+                  "sectionId": "section-projects",
+                  "title": Object {
+                    "EN": "Projects",
+                    "ES": "Proyectos",
+                  },
+                },
+                Object {
+                  "sectionId": "section-contact",
+                  "title": Object {
+                    "EN": "Contact Me",
+                    "ES": "Contactame",
+                  },
+                },
+              ]
+            }
+            handleLanguageSwitch={[MockFunction]}
+            isExpanded={false}
+            isSideBar={false}
+            selectedLanguage="EN"
+            toggleSidebarExpansion={[Function]}
+          />,
+        ],
         "className": "header",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleLanguageSwitch": [MockFunction],
-          "selectedLanguage": "EN",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Logo />,
+            "className": "linkLogo",
+            "href": "#root",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleNavButtonPress": [Function],
+            "isExpandButton": true,
+            "isMobileScreen": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "buttons": Array [
+              Object {
+                "sectionId": "section-skills",
+                "title": Object {
+                  "EN": "Skills",
+                  "ES": "Habilidades",
+                },
+              },
+              Object {
+                "sectionId": "section-projects",
+                "title": Object {
+                  "EN": "Projects",
+                  "ES": "Proyectos",
+                },
+              },
+              Object {
+                "sectionId": "section-contact",
+                "title": Object {
+                  "EN": "Contact Me",
+                  "ES": "Contactame",
+                },
+              },
+            ],
+            "handleLanguageSwitch": [MockFunction],
+            "isExpanded": false,
+            "isSideBar": false,
+            "selectedLanguage": "EN",
+            "toggleSidebarExpansion": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "header",
     },
   ],
@@ -91,5 +297,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

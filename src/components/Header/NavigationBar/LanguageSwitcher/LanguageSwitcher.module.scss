@@ -1,14 +1,17 @@
-@import '../../../globalStyles/colors.scss';
+@import '../../../../globalStyles/colors.scss';
 
 .languageSwitcher {
     border: 2px solid $red;
     border-radius: 100px;
     margin: 5px;
+    margin-top: 1rem;
     position: relative;
     cursor: pointer;
-    background-color: $gray;
+    background-color: $gray-dark;
     display: flex;
+    justify-content: space-around;
     padding: 5px;
+    width: 100px;
 
     .switchBlocker {
         position: absolute;
