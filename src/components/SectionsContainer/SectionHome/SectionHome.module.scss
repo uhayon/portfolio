@@ -3,11 +3,16 @@
 .sectionHome {
     background: url('../../../assets/bg_portfolio.jpeg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+
+    @media screen and (min-width: 500px) {
+        margin-top: 0;
+    }
 
     .bodyContainer {
         height: 80%;
@@ -17,10 +22,11 @@
         }
 
         .textsContainer {
-            background-color: rgba(0, 0, 0, .75);
+            background-color: rgba(0, 0, 0, .85);
             color: $white;
             text-align: center;
             padding: 2rem;
+            font-size: 1.2rem;
 
             .contactButton {
                 background-color: $red;
