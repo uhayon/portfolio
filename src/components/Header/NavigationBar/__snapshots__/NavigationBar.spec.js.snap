@@ -7,21 +7,21 @@ ShallowWrapper {
     buttons={
       Array [
         Object {
-          "sectionId": "section-skills",
+          "sectionId": "skills",
           "title": Object {
             "EN": "Skills",
             "ES": "Habilidades",
           },
         },
         Object {
-          "sectionId": "section-projects",
+          "sectionId": "projects",
           "title": Object {
             "EN": "Projects",
             "ES": "Proyectos",
           },
         },
         Object {
-          "sectionId": "section-contact",
+          "sectionId": "contact",
           "title": Object {
             "EN": "Contact Me",
             "ES": "Contactame",
@@ -67,21 +67,21 @@ ShallowWrapper {
             buttons={
               Array [
                 Object {
-                  "sectionId": "section-skills",
+                  "sectionId": "skills",
                   "title": Object {
                     "EN": "Skills",
                     "ES": "Habilidades",
                   },
                 },
                 Object {
-                  "sectionId": "section-projects",
+                  "sectionId": "projects",
                   "title": Object {
                     "EN": "Projects",
                     "ES": "Proyectos",
                   },
                 },
                 Object {
-                  "sectionId": "section-contact",
+                  "sectionId": "contact",
                   "title": Object {
                     "EN": "Contact Me",
                     "ES": "Contactame",
@@ -120,21 +120,21 @@ ShallowWrapper {
               buttons={
                 Array [
                   Object {
-                    "sectionId": "section-skills",
+                    "sectionId": "skills",
                     "title": Object {
                       "EN": "Skills",
                       "ES": "Habilidades",
                     },
                   },
                   Object {
-                    "sectionId": "section-projects",
+                    "sectionId": "projects",
                     "title": Object {
                       "EN": "Projects",
                       "ES": "Proyectos",
                     },
                   },
                   Object {
-                    "sectionId": "section-contact",
+                    "sectionId": "contact",
                     "title": Object {
                       "EN": "Contact Me",
                       "ES": "Contactame",
@@ -188,21 +188,21 @@ ShallowWrapper {
             "props": Object {
               "buttons": Array [
                 Object {
-                  "sectionId": "section-skills",
+                  "sectionId": "skills",
                   "title": Object {
                     "EN": "Skills",
                     "ES": "Habilidades",
                   },
                 },
                 Object {
-                  "sectionId": "section-projects",
+                  "sectionId": "projects",
                   "title": Object {
                     "EN": "Projects",
                     "ES": "Proyectos",
                   },
                 },
                 Object {
-                  "sectionId": "section-contact",
+                  "sectionId": "contact",
                   "title": Object {
                     "EN": "Contact Me",
                     "ES": "Contactame",
@@ -258,21 +258,21 @@ ShallowWrapper {
               buttons={
                 Array [
                   Object {
-                    "sectionId": "section-skills",
+                    "sectionId": "skills",
                     "title": Object {
                       "EN": "Skills",
                       "ES": "Habilidades",
                     },
                   },
                   Object {
-                    "sectionId": "section-projects",
+                    "sectionId": "projects",
                     "title": Object {
                       "EN": "Projects",
                       "ES": "Proyectos",
                     },
                   },
                   Object {
-                    "sectionId": "section-contact",
+                    "sectionId": "contact",
                     "title": Object {
                       "EN": "Contact Me",
                       "ES": "Contactame",
@@ -311,21 +311,21 @@ ShallowWrapper {
                 buttons={
                   Array [
                     Object {
-                      "sectionId": "section-skills",
+                      "sectionId": "skills",
                       "title": Object {
                         "EN": "Skills",
                         "ES": "Habilidades",
                       },
                     },
                     Object {
-                      "sectionId": "section-projects",
+                      "sectionId": "projects",
                       "title": Object {
                         "EN": "Projects",
                         "ES": "Proyectos",
                       },
                     },
                     Object {
-                      "sectionId": "section-contact",
+                      "sectionId": "contact",
                       "title": Object {
                         "EN": "Contact Me",
                         "ES": "Contactame",
@@ -379,21 +379,21 @@ ShallowWrapper {
               "props": Object {
                 "buttons": Array [
                   Object {
-                    "sectionId": "section-skills",
+                    "sectionId": "skills",
                     "title": Object {
                       "EN": "Skills",
                       "ES": "Habilidades",
                     },
                   },
                   Object {
-                    "sectionId": "section-projects",
+                    "sectionId": "projects",
                     "title": Object {
                       "EN": "Projects",
                       "ES": "Proyectos",
                     },
                   },
                   Object {
-                    "sectionId": "section-contact",
+                    "sectionId": "contact",
                     "title": Object {
                       "EN": "Contact Me",
                       "ES": "Contactame",

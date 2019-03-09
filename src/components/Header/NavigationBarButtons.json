@@ -4,20 +4,20 @@
             "EN": "Skills",
             "ES": "Habilidades"
         },
-        "sectionId": "section-skills"
+        "sectionId": "skills"
     },
     {
         "title": {
             "EN": "Projects",
             "ES": "Proyectos"
         },
-        "sectionId": "section-projects"
+        "sectionId": "projects"
     },
     {
         "title": {
             "EN": "Contact Me",
             "ES": "Contactame"
         },
-        "sectionId": "section-contact"
+        "sectionId": "contact"
     }
 ]

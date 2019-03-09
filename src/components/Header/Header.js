@@ -15,24 +15,39 @@ class Header extends React.Component {
 
     this.state = {
       isMobileScreen: this.isMobileScreen(),
-      navigationBarExpanded: false
+      navigationBarExpanded: false,
+      navigationBarFixed: this.getNavigationBarFixed()
     };
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.setIsMobileScreen);
+    window.addEventListener('scroll', this.setNavigationBarFixed);
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.setIsMobileScreen);
+    window.removeEventListener('scroll', this.setNavigationBarFixed);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.selectedLanguage !== this.props.selectedLanguage || 
       nextState.navigationBarExpanded !== this.state.navigationBarExpanded ||
-      nextState.isMobileScreen !== this.state.isMobileScreen
+      nextState.isMobileScreen !== this.state.isMobileScreen ||
+      nextState.navigationBarFixed !== this.state.navigationBarFixed
     );
+  }
+
+  getNavigationBarFixed = () => {
+    return window.scrollY >= 30;
+  }
+
+  setNavigationBarFixed = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      navigationBarFixed: this.getNavigationBarFixed()
+    }));
   }
 
   setIsMobileScreen = () => {
@@ -57,11 +72,11 @@ class Header extends React.Component {
 
   render() {
     const { selectedLanguage, handleLanguageSwitch } = this.props;
-    const { navigationBarExpanded, isMobileScreen } = this.state;
+    const { navigationBarExpanded, isMobileScreen, navigationBarFixed} = this.state;
 
     return (
-      <header className={styles.header}>
-        <a href='#root' className={styles.linkLogo}>
+      <header className={`${styles.header} ${navigationBarFixed ? styles.fixed : ''}`}>
+        <a href='#home' className={styles.linkLogo}>
           <Logo />
         </a>
         <ToggleNavigationBarButton

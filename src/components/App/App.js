@@ -35,10 +35,11 @@ class App extends React.Component {
   }
   
   render() {
+    const {language} = this.state;
     return (
       <>
-        <Header selectedLanguage={this.state.language} handleLanguageSwitch={this.handleLanguageSwitch} />
-        <SectionsContainer />
+        <Header domReference={this.headerRef} selectedLanguage={language} handleLanguageSwitch={this.handleLanguageSwitch} />
+        <SectionsContainer selectedLanguage={language} />
         {/* <Footer /> */}
       </>
     );

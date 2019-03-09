@@ -23,7 +23,9 @@ ShallowWrapper {
           handleLanguageSwitch={[Function]}
           selectedLanguage="EN"
         />,
-        <SectionsContainer />,
+        <SectionsContainer
+          selectedLanguage="EN"
+        />,
       ],
     },
     "ref": null,
@@ -33,6 +35,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "domReference": undefined,
           "handleLanguageSwitch": [Function],
           "selectedLanguage": "EN",
         },
@@ -44,7 +47,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "selectedLanguage": "EN",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -63,7 +68,9 @@ ShallowWrapper {
             handleLanguageSwitch={[Function]}
             selectedLanguage="EN"
           />,
-          <SectionsContainer />,
+          <SectionsContainer
+            selectedLanguage="EN"
+          />,
         ],
       },
       "ref": null,
@@ -73,6 +80,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "domReference": undefined,
             "handleLanguageSwitch": [Function],
             "selectedLanguage": "EN",
           },
@@ -84,7 +92,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "selectedLanguage": "EN",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
