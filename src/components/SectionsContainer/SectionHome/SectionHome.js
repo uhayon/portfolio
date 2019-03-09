@@ -16,7 +16,7 @@ const Body = ({ selectedLanguage }) => (
   <>
     {
       selectedLanguage === 'EN' ?
-      <p>Programming is my passion. I\'ve been doing it for over 5 years and I\'m always looking for ways to grow every day.</p> :
+      <p>Programming is my passion. I've been doing it for over 5 years and I'm always looking for ways to grow every day.</p> :
       <p>Programar es mi pasión. He estado haciéndolo por más de 5 años y siempre estoy buscando maneras de crecer y mejorar día a día.</p>
     }
     {

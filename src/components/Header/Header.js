@@ -73,7 +73,7 @@ class Header extends React.Component {
   render() {
     const { selectedLanguage, handleLanguageSwitch } = this.props;
     const { navigationBarExpanded, isMobileScreen, navigationBarFixed} = this.state;
-
+    
     return (
       <header className={`${styles.header} ${navigationBarFixed ? styles.fixed : ''}`}>
         <a href='#home' className={styles.linkLogo}>
