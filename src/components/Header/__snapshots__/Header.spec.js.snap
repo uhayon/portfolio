@@ -24,7 +24,7 @@ ShallowWrapper {
       "children": Array [
         <a
           className="linkLogo"
-          href="#root"
+          href="#home"
         >
           <Logo />
         </a>,
@@ -37,21 +37,21 @@ ShallowWrapper {
           buttons={
             Array [
               Object {
-                "sectionId": "section-skills",
+                "sectionId": "skills",
                 "title": Object {
                   "EN": "Skills",
                   "ES": "Habilidades",
                 },
               },
               Object {
-                "sectionId": "section-projects",
+                "sectionId": "projects",
                 "title": Object {
                   "EN": "Projects",
                   "ES": "Proyectos",
                 },
               },
               Object {
-                "sectionId": "section-contact",
+                "sectionId": "contact",
                 "title": Object {
                   "EN": "Contact Me",
                   "ES": "Contactame",
@@ -66,7 +66,7 @@ ShallowWrapper {
           toggleSidebarExpansion={[Function]}
         />,
       ],
-      "className": "header",
+      "className": "header ",
     },
     "ref": null,
     "rendered": Array [
@@ -77,7 +77,7 @@ ShallowWrapper {
         "props": Object {
           "children": <Logo />,
           "className": "linkLogo",
-          "href": "#root",
+          "href": "#home",
         },
         "ref": null,
         "rendered": Object {
@@ -111,21 +111,21 @@ ShallowWrapper {
         "props": Object {
           "buttons": Array [
             Object {
-              "sectionId": "section-skills",
+              "sectionId": "skills",
               "title": Object {
                 "EN": "Skills",
                 "ES": "Habilidades",
               },
             },
             Object {
-              "sectionId": "section-projects",
+              "sectionId": "projects",
               "title": Object {
                 "EN": "Projects",
                 "ES": "Proyectos",
               },
             },
             Object {
-              "sectionId": "section-contact",
+              "sectionId": "contact",
               "title": Object {
                 "EN": "Contact Me",
                 "ES": "Contactame",
@@ -154,7 +154,7 @@ ShallowWrapper {
         "children": Array [
           <a
             className="linkLogo"
-            href="#root"
+            href="#home"
           >
             <Logo />
           </a>,
@@ -167,21 +167,21 @@ ShallowWrapper {
             buttons={
               Array [
                 Object {
-                  "sectionId": "section-skills",
+                  "sectionId": "skills",
                   "title": Object {
                     "EN": "Skills",
                     "ES": "Habilidades",
                   },
                 },
                 Object {
-                  "sectionId": "section-projects",
+                  "sectionId": "projects",
                   "title": Object {
                     "EN": "Projects",
                     "ES": "Proyectos",
                   },
                 },
                 Object {
-                  "sectionId": "section-contact",
+                  "sectionId": "contact",
                   "title": Object {
                     "EN": "Contact Me",
                     "ES": "Contactame",
@@ -196,7 +196,7 @@ ShallowWrapper {
             toggleSidebarExpansion={[Function]}
           />,
         ],
-        "className": "header",
+        "className": "header ",
       },
       "ref": null,
       "rendered": Array [
@@ -207,7 +207,7 @@ ShallowWrapper {
           "props": Object {
             "children": <Logo />,
             "className": "linkLogo",
-            "href": "#root",
+            "href": "#home",
           },
           "ref": null,
           "rendered": Object {
@@ -241,21 +241,21 @@ ShallowWrapper {
           "props": Object {
             "buttons": Array [
               Object {
-                "sectionId": "section-skills",
+                "sectionId": "skills",
                 "title": Object {
                   "EN": "Skills",
                   "ES": "Habilidades",
                 },
               },
               Object {
-                "sectionId": "section-projects",
+                "sectionId": "projects",
                 "title": Object {
                   "EN": "Projects",
                   "ES": "Proyectos",
                 },
               },
               Object {
-                "sectionId": "section-contact",
+                "sectionId": "contact",
                 "title": Object {
                   "EN": "Contact Me",
                   "ES": "Contactame",

@@ -3,21 +3,30 @@
 .header {
     background-color: $black;
     height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
     padding: .5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: height 0.1s linear;
+
+    &.fixed {
+        height: 40px;
+        .linkLogo {
+            height: 25px;
+        }
+
+        li > a {
+            font-size: 1.1rem;
+        }
+    }
 
     .linkLogo {
         height: 30px;
         transition: height 0.2s ease-out;
-        &.shrink {
-            height: 25px;
-        }
     }
 }

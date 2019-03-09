@@ -1,0 +1,52 @@
+@import '../../../globalStyles/colors.scss';
+
+.sectionHome {
+    background: url('../../../assets/bg_portfolio.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bodyContainer {
+        height: 80%;
+        width: 100%;
+        @media screen and (min-width: 500px) {
+            width: 75%;
+        }
+
+        .textsContainer {
+            background-color: rgba(0, 0, 0, .75);
+            color: $white;
+            text-align: center;
+            padding: 2rem;
+
+            .contactButton {
+                background-color: $red;
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1rem 1.5rem;
+                border: none;
+                border-radius: 100px;
+                transform: scale(1);
+                transition: all 0.2s linear;
+                margin: 2rem 0;
+                cursor: pointer;
+                outline: none;
+
+                &:hover {
+                    transform: scale(1.2);
+                    background-color: $red-light
+                }
+            }
+
+            .important {
+                font-weight: bold;
+                font-style: italic;
+                color: $red;
+            }
+        }
+    }
+}

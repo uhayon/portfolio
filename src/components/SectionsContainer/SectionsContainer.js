@@ -1,7 +1,10 @@
 import React from 'react';
 
-const SectionsContainer = () => (
+import SectionHome from './SectionHome/SectionHome';
+
+const SectionsContainer = ({ selectedLanguage }) => (
   <>
+    <SectionHome selectedLanguage={selectedLanguage} />
   </>
 );
 
