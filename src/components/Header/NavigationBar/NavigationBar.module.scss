@@ -39,6 +39,10 @@
         opacity: 0;
     }
 
+    li > a {
+        font-size: 1.2rem !important;
+    }
+
     &.sidebarOpen {
         width: 100%;
         padding: 1rem .5rem;
