@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './SectionHome.module.scss';
 
@@ -55,5 +56,9 @@ const SectionHome = ({ selectedLanguage }) => (
       </div>
     </section>
 );
+
+SectionHome.propTypes = {
+  selectedLanguage: PropTypes.string.isRequired
+}
 
 export default SectionHome;

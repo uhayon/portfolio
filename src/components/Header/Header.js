@@ -67,7 +67,10 @@ class Header extends React.Component {
     this.setState(prevState => ({
       ...prevState,
       navigationBarExpanded: !prevState.navigationBarExpanded
-    }));
+    }), () => {
+      const body = document.querySelector('body');
+      this.state.navigationBarExpanded ? body.classList.add('overflow-hidden') : body.classList.remove('overflow-hidden');
+    });
   }
 
   render() {

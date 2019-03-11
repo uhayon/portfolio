@@ -1,0 +1,19 @@
+@import '../../../globalStyles/colors.scss';
+
+.sectionSkills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        color: $white;
+    }
+
+    .sectionsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

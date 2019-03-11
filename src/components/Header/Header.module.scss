@@ -16,6 +16,9 @@
 
     &.fixed {
         height: 40px;
+        background-color: $gray-dark;
+        border-bottom: 3px solid $red;
+
         .linkLogo {
             height: 25px;
         }
