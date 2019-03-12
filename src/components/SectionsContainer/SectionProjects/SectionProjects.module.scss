@@ -1,14 +1,15 @@
 @import '../../../globalStyles/colors.scss';
 
-.sectionSkills {
+.sectionProjects {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background-color: $gray;
+
     h2 {
-        color: $white;
+        color: $black;
         font-size: 2em;
         text-align: center;
         margin-top: 2em;
