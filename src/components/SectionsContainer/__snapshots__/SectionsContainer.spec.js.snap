@@ -27,6 +27,9 @@ ShallowWrapper {
         <SectionSkills
           selectedLanguage="EN"
         />,
+        <SectionProjects
+          selectedLanguage="EN"
+        />,
       ],
     },
     "ref": null,
@@ -35,6 +38,17 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
+        "props": Object {
+          "selectedLanguage": "EN",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
           "selectedLanguage": "EN",
         },
@@ -69,6 +83,9 @@ ShallowWrapper {
           <SectionSkills
             selectedLanguage="EN"
           />,
+          <SectionProjects
+            selectedLanguage="EN"
+          />,
         ],
       },
       "ref": null,
@@ -77,6 +94,17 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
+          "props": Object {
+            "selectedLanguage": "EN",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
             "selectedLanguage": "EN",
           },
