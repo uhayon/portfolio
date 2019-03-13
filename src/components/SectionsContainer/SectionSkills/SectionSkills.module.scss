@@ -1,0 +1,22 @@
+@import '../../../globalStyles/colors.scss';
+
+.sectionSkills {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        color: $white;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .sectionsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "title": {
+            "EN": "Skills",
+            "ES": "Habilidades"
+        },
+        "sectionId": "skills"
+    },
+    {
+        "title": {
+            "EN": "Projects",
+            "ES": "Proyectos"
+        },
+        "sectionId": "projects"
+    },
+    {
+        "title": {
+            "EN": "Contact Me",
+            "ES": "Contactame"
+        },
+        "sectionId": "contact"
+    }
+]

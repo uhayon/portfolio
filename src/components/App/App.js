@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
-// import SectionsContainer from '../SectionsContainer/SectionsContainer';
+import SectionsContainer from '../SectionsContainer/SectionsContainer';
 // import Footer from '../Footer/Footer';
 
 class App extends React.Component {
@@ -35,11 +35,12 @@ class App extends React.Component {
   }
   
   render() {
+    const {language} = this.state;
     return (
       <>
-        <Header selectedLanguage={this.state.language} handleLanguageSwitch={this.handleLanguageSwitch} />
-        {/* <SectionsContainer />
-        <Footer /> */}
+        <Header domReference={this.headerRef} selectedLanguage={language} handleLanguageSwitch={this.handleLanguageSwitch} />
+        <SectionsContainer selectedLanguage={language} />
+        {/* <Footer /> */}
       </>
     );
   }

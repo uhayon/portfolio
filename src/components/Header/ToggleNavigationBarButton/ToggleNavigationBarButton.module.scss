@@ -1,0 +1,30 @@
+@import '../../../globalStyles/colors.scss';
+
+.navigationBarToggleButton {
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.hidden {
+        display: none;
+    }
+
+    rect,
+    path {
+        transition: fill 0.2s ease;
+        fill: $white;
+    }
+
+    svg {
+        height: 100%;
+        width: auto;
+    }
+
+    &:hover {
+        rect,
+        path {
+            fill: $red;
+        }
+    }
+}

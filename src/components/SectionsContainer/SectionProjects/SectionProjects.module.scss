@@ -1,0 +1,23 @@
+@import '../../../globalStyles/colors.scss';
+
+.sectionProjects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray;
+
+    h2 {
+        color: $black;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .sectionsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

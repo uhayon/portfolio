@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mounting app Must match snapshot without crashing 1`] = `
+exports[`Mouting Sections Container Should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <SectionsContainer
+    selectedLanguage="EN"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -19,11 +21,13 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <Header
-          handleLanguageSwitch={[Function]}
+        <SectionHome
           selectedLanguage="EN"
         />,
-        <SectionsContainer
+        <SectionSkills
+          selectedLanguage="EN"
+        />,
+        <SectionProjects
           selectedLanguage="EN"
         />,
       ],
@@ -33,10 +37,8 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "domReference": undefined,
-          "handleLanguageSwitch": [Function],
           "selectedLanguage": "EN",
         },
         "ref": null,
@@ -46,7 +48,18 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
+        "props": Object {
+          "selectedLanguage": "EN",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
           "selectedLanguage": "EN",
         },
@@ -64,11 +77,13 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Header
-            handleLanguageSwitch={[Function]}
+          <SectionHome
             selectedLanguage="EN"
           />,
-          <SectionsContainer
+          <SectionSkills
+            selectedLanguage="EN"
+          />,
+          <SectionProjects
             selectedLanguage="EN"
           />,
         ],
@@ -78,10 +93,8 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "domReference": undefined,
-            "handleLanguageSwitch": [Function],
             "selectedLanguage": "EN",
           },
           "ref": null,
@@ -91,7 +104,18 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
+          "props": Object {
+            "selectedLanguage": "EN",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
             "selectedLanguage": "EN",
           },
@@ -124,6 +148,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;

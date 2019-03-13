@@ -1,0 +1,131 @@
+@import '../../../../globalStyles/colors.scss';
+
+.projectThumbnail {
+    flex: 0 0 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: $gray-dark;
+    color: $white;
+
+    @media screen and (min-width: 700px) {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    h3 {
+        width: 100%;
+        background: $red;
+        margin: 0;
+        padding: 1em 0;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .descriptionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1em;
+        text-align: left;
+
+        .description {
+            white-space: pre-line;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1em;
+        background-color: $black;
+
+        a {
+            color: $white;
+            font-weight: bold;
+            text-decoration: none;
+            transform: scale(1);
+            transition: all 0.2s linear;
+            margin: 1em;
+            word-break: break-word;
+
+            svg {
+                height: 50px;
+                path {
+                    fill: $white !important;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $red;
+                svg {
+                    path {
+                        fill: $red !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .projectThumbnail {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     max-width: 500px;
+//     position: relative;
+//     margin: 1em;
+//     text-align: center;
+//     border-radius: 10px;
+//     background-color: $gray-dark;
+//     color: $white;
+
+//     &:hover {
+//         cursor: pointer;
+//     }
+
+//     h3 {
+//         width: 100%;
+//         z-index: 2;
+//         background: $red;
+//         margin: 0;
+//         padding: 1em 0;
+//         border-radius: 10px 10px 0 0;
+//     }
+
+//     .longDescriptionContainer {
+//         display: none;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         background-color: rgba(0, 0, 0, .85);
+//         align-items: center;
+//         padding: 1rem;
+//         border-radius: 10px;
+//     }
+// }
+
+// @media screen and (min-width: 500px) {
+//     .projectThumbnail {
+//         .shortDescriptionContainer {
+//             display: none;
+//         }
+
+//         &:hover {
+//             img {
+//                 border-radius: 0 0 10px 10px;
+//             }
+
+//             .longDescriptionContainer {
+//                 display: flex;
+//             }
+//         }
+//     }
+// }
