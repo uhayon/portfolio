@@ -23,6 +23,9 @@ jobs:
     docker:
       - image: node:8.9
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - ${GITHUB_FINGERPRINT}
       - checkout
       - run:
           name: Install node modules
