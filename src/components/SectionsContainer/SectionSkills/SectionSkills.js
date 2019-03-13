@@ -17,18 +17,34 @@ class SectionSkills extends React.Component {
       backend: {},
       database: {},
       mobile: {},
-      tools: {}
+      tools: {},
+      searchingSkills: false
     };
   }
 
   componentDidMount() {
-    fetch('https://ur-portfolio-api.herokuapp.com/technologies')
+    this.setState({
+      searchingSkills: true
+    }, () => {
+      fetch('https://ur-portfolio-api.herokuapp.com/technologies')
       .then(response => response.json())
-      .then(({_id, ...rest}) => this.setState({...rest}))
-      .catch(err => this.setState(this.getInitialSkills()));
+      .then(({_id, ...rest}) => this.setSkills(rest))
+      .catch(err => this.setSkills(this.getInitialSkills()));
+    });
+  }
+
+  setSkills = (skills) => {
+    this.setState({
+      ...skills,
+      searchingSkills: false
+    })
   }
 
   render() {
+    if (this.state.searchingSkills) {
+      return <div>Loading...</div>;
+    }
+
     const { selectedLanguage } = this.props;
 
     return (
