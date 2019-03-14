@@ -4,8 +4,7 @@ import { shallow } from 'enzyme';
 import SectionsContainer from './SectionsContainer';
 import SectionHome from './SectionHome/SectionHome';
 import SectionSkills from './SectionSkills/SectionSkills';
-// import SectionProjects from './SectionProjects/SectionProjects';
-// import SectionContact from './SectionContact/SectionContact';
+import SectionProjects from './SectionProjects/SectionProjects';
 
 describe('Mouting Sections Container', () => {
   let wrapper;
@@ -16,9 +15,9 @@ describe('Mouting Sections Container', () => {
   })
 
   it('Should have the SectionHome, SectionSkills, SectionProject and SectionContact as children', () => {
-    const childrenSections = [SectionHome, SectionSkills/*, SectionProjects, SectionContact*/];
+    const childrenSections = [SectionHome, SectionSkills, SectionProjects];
     expect(wrapper.prop('children').length).toBeDefined();
-    // expect(wrapper.prop('children').length).toEqual(4);
+    expect(wrapper.prop('children').length).toEqual(3);
     childrenSections.forEach(child => {
       expect(wrapper.exists(child));
     })

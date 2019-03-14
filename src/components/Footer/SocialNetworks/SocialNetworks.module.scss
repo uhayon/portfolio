@@ -1,0 +1,27 @@
+@import '../../../globalStyles/colors.scss';
+
+.socialNetworkContainer {
+    display: flex;
+    flex-direction: column;
+
+    .socialNetworkLinksContaier {
+        svg {
+            height: 40px;
+            cursor: pointer;
+            width: auto;
+            margin-right: 1rem;
+            transform: scale(1);
+            path {
+                fill: $white !important;
+                transition: all 0.2s linear;
+            }
+            &:hover {
+                transition: all 0.2s linear;
+                transform: scale(1.3);
+                path {
+                    fill: $red !important;
+                }
+            }
+        }
+    }
+}

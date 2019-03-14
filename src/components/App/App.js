@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import SectionsContainer from '../SectionsContainer/SectionsContainer';
-// import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 
 class App extends React.Component {
   constructor() {
@@ -40,7 +40,7 @@ class App extends React.Component {
       <>
         <Header domReference={this.headerRef} selectedLanguage={language} handleLanguageSwitch={this.handleLanguageSwitch} />
         <SectionsContainer selectedLanguage={language} />
-        {/* <Footer /> */}
+        <Footer selectedLanguage={language} />
       </>
     );
   }
