@@ -1,14 +1,29 @@
 @import '../../globalStyles/colors.scss';
+@import '../../globalStyles/constants.scss';
 
 .footer {
-    background-color: $gray-dark;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    padding: 1rem;
-    color: $white;
+    .footerHeading {
+        background-color: $gray-dark;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+        color: $white;
+    
+        @media screen and (min-width: $mobile-breakpoint) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 
-    @media screen and (min-width: 900px) {
-        grid-template-columns: 1fr 1fr;
+    .copyright {
+        background-color: #000000;
+        color: #FFFFFF;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        padding: .5rem 0;
+        text-align: center;
     }
 }

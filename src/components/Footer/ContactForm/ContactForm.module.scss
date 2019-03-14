@@ -1,0 +1,36 @@
+@import '../../../globalStyles/colors.scss';
+@import '../../../globalStyles/constants.scss';
+
+.formContactContainer {
+    margin-top: 2rem;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        margin-top: 0;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        > button {
+            background-color: $red;
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 100px;
+            transform: scale(1);
+            transition: all 0.2s linear;
+            margin: 2rem 0;
+            cursor: pointer;
+            outline: none;
+            width: 50%;
+            align-self: center;
+    
+            &:hover {
+                transform: scale(1.2);
+                background-color: $red-light
+            }
+        }
+    }
+}

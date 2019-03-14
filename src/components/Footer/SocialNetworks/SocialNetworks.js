@@ -11,8 +11,8 @@ const SocialNetworks = ({ selectedLanguage }) => (
     <Logo prefixColor='#ffffff' suffixColor='#ffffff' height='45px' />
     <p>{selectedLanguage === 'EN' ? `Let's work together and make great things!` : 'Trabajemos juntos y logremos grandes cosas!'}</p>
     <div className={styles.socialNetworkLinksContaier}>
-      <IconLinkedIn />
-      <IconGithub />
+    <a href='https://www.linkedin.com/in/uhayon/' target='_blank' rel='noopener noreferrer'><IconLinkedIn /></a>
+    <a href='https://github.com/uhayon' target='_blank' rel='noopener noreferrer'><IconGithub /></a>
     </div>
   </div>
 );
