@@ -41,7 +41,7 @@ class ContactForm extends React.Component {
       sendingMailResponse: ''
     }), () => {
       const { sendingMail, sendingMailResponse, ...contacyBody} = this.state;
-      fetch('http://ur-portfolio-api.herokuapp.com/contact', {
+      fetch('https://ur-portfolio-api.herokuapp.com/contact', {
         method: 'post',
         redirect: 'manual',
         headers: {
