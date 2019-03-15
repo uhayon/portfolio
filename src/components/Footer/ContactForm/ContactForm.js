@@ -1,5 +1,6 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
+import ReactGa from 'react-ga';
 
 import FormField from './FormField/FormField';
 
@@ -40,6 +41,11 @@ class ContactForm extends React.Component {
       sendingMail: true,
       sendingMailResponse: ''
     }), () => {
+      ReactGa.event({
+        category: 'Contact',
+        action: 'Sent a message through the contact form'
+      });
+      
       const { sendingMail, sendingMailResponse, ...contacyBody} = this.state;
       fetch('https://ur-portfolio-api.herokuapp.com/contact', {
         method: 'post',
