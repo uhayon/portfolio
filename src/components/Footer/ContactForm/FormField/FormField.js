@@ -17,7 +17,9 @@ const FormField = ({ name, label, inputValue, onInputChange, isMultiLine, isOpti
           cols='auto'
           rows='10'
           style={{resize: 'none'}}
-          required={!isOptional} />  :
+          required={!isOptional}
+          value={inputValue}
+          onChange={onInputChange} />  :
         <input 
           id={id}
           name={name}
