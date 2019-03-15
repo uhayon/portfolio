@@ -49,7 +49,7 @@ class SectionSkills extends React.Component {
 
     return (
       <section id='skills' className={styles.sectionSkills}>
-        <h2>{selectedLanguage === 'EN' ? 'These are mi skills' : 'Estas son mis habilidades'}</h2>
+        <h2>{selectedLanguage === 'EN' ? 'These are my skills' : 'Estas son mis habilidades'}</h2>
         <div className={styles.sectionsContainer}>
           {
             Object.keys(this.state).map(category => {
