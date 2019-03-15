@@ -60,7 +60,7 @@ class Header extends React.Component {
   }
 
   isMobileScreen = () => {
-    return window.innerWidth < 990;
+    return window.innerWidth < 900;
   }
 
   handleToggleNavigationBarExpansion = () => {
