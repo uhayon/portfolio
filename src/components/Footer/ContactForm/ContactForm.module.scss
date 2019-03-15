@@ -26,10 +26,15 @@
             outline: none;
             width: 50%;
             align-self: center;
-    
-            &:hover {
-                transform: scale(1.2);
-                background-color: $red-light
+            &:not(:disabled)  {
+                &:hover {
+                    transform: scale(1.2);
+                    background-color: $red-light
+                }
+            }
+            &:disabled {
+                background-color: $gray;
+                opacity: .75;
             }
         }
     }

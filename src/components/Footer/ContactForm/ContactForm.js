@@ -18,7 +18,9 @@ class ContactForm extends React.Component {
       mail: '',
       company: '',
       motive: '',
-      message: ''
+      message: '',
+      sendingMail: false,
+      sendingMailResponse: ''
     }
   }
 
@@ -33,12 +35,51 @@ class ContactForm extends React.Component {
 
   handleContactSend = event => {
     event.preventDefault();
-    console.log('Holis');
+    this.setState(prevState => ({
+      ...prevState,
+      sendingMail: true,
+      sendingMailResponse: ''
+    }), () => {
+      const { sendingMail, sendingMailResponse, ...contacyBody} = this.state;
+      fetch('http://ur-portfolio-api.herokuapp.com/contact', {
+        method: 'post',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(contacyBody)
+      })
+        .then(response => {
+          const selectedLanguage = this.props;
+          let errorMessage = '';
+
+          if (response.ok) {
+            errorMessage = selectedLanguage === 'EN' ? 'Message sent successfully, thank you very much!' : 'Mensaje enviado correctamente, muchas gracias!'
+          } else {
+            errorMessage = selectedLanguage === 'EN' ? 'Error sending the message, please try again' : 'Error al enviar el mensaje, por favor intentá de nuevo';
+          }
+
+          this.setState(prevState => ({
+            ...prevState,
+            sendingMail: false,
+            sendingMailResponse: errorMessage
+          }))
+        })
+        .catch(err => {
+          console.log(err);
+          const selectedLanguage = this.props;
+          this.setState(prevState => ({
+            ...prevState,
+            sendingMail: false,
+            sendingMailResponse: selectedLanguage === 'EN' ? 'Error sending the message, please try again' : 'Error al enviar el mensaje, por favor intentá de nuevo'
+          }))
+        })
+    })
   }
 
   render() {
     const { selectedLanguage } = this.props;
-    const { name, mail, company, motive, message } = this.state;
+    const { name, mail, company, motive, message, sendingMail, sendingMailResponse } = this.state;
 
     return (
       <div id='contact' className={styles.formContactContainer}>
@@ -49,12 +90,13 @@ class ContactForm extends React.Component {
         }
         <form onSubmit={this.handleContactSend} className={styles.form}>
           <FormField name='name' inputValue={name} label={selectedLanguage === 'EN' ? 'Name' : 'Nombre'} onInputChange={this.handleInputChange} />
-          <FormField name='mail' inputValue={mail} label='E-Mail' onInputChange={this.handleInputChange} />
+          <FormField name='mail' inputValue={mail} label='E-Mail' onInputChange={this.handleInputChange} isMail />
           <FormField name='company' inputValue={company} label={selectedLanguage === 'EN' ? 'Company (optional)' : 'Compañía (opcional)'} onInputChange={this.handleInputChange} isOptional />
           <FormField name='motive' inputValue={motive} label={selectedLanguage === 'EN' ? 'Motive' : 'Motivo'} onInputChange={this.handleInputChange} />
           <FormField name='message' inputValue={message} label={selectedLanguage === 'EN' ? 'Message' : 'Mensaje'} onInputChange={this.handleInputChange} isMultiLine />
-          <button>{selectedLanguage === 'EN' ? 'SUBMIT' : 'ENVIAR'}</button>
+          <button disabled={sendingMail}>{selectedLanguage === 'EN' ? 'SUBMIT' : 'ENVIAR'}</button>
         </form>
+        <p style={{display: `${sendingMailResponse.trim() !== '' ? 'block' : 'none'}`}}>{sendingMailResponse}</p>
       </div>
     );
   }

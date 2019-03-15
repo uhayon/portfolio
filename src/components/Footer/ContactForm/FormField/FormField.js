@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './FormField.module.scss';
 
-const FormField = ({ name, label, inputValue, onInputChange, isMultiLine, isOptional }) => {  
+const FormField = ({ name, label, inputValue, onInputChange, isMultiLine, isOptional, isMail }) => {  
   const id = `contact-form-${name}`;
 
   return (
@@ -21,7 +21,7 @@ const FormField = ({ name, label, inputValue, onInputChange, isMultiLine, isOpti
         <input 
           id={id}
           name={name}
-          type='text'
+          type={isMail ? 'email' : 'text'}
           value={inputValue}
           onChange={onInputChange}
           required={!isOptional} />
