@@ -37,11 +37,13 @@ workflows:
       - build:
           filters:
             branches:
-              ignore:
-                - gh-pages
+              ignore: /^gh.*/
       - test:
           requires:
             - build
+          filters:
+            branches:
+              ignore: /^gh.*/
       # - deploy:
       #     filters:
       #       branches:
