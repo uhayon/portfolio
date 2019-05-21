@@ -30,16 +30,15 @@ class SectionProjects extends React.Component {
   }
 
   render() {
-    if (this.state.searchingProjects) {
-      return <div>Loading...</div>
-    }
-
     const { selectedLanguage } = this.props;
+
     return (
       <section id='projects' className={styles.sectionProjects}>
         <h2>{selectedLanguage === 'EN' ? 'Latest projects' : 'Últimos proyectos'}</h2>
         <div className={styles.sectionsContainer}>
           {
+            this.state.searchingProjects ?
+            <div style={{color: 'white'}}>{selectedLanguage === 'EN' ? 'Loading Projects...' : 'Cargando Proyectos...'}</div> :
             this.state.projects.map(project => <ProjectThumbnail key={project._id} selectedLanguage={selectedLanguage} project={project} />) 
           }
         </div>

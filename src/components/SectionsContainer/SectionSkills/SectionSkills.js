@@ -41,10 +41,6 @@ class SectionSkills extends React.Component {
   }
 
   render() {
-    if (this.state.searchingSkills) {
-      return <div>Loading...</div>;
-    }
-
     const { selectedLanguage } = this.props;
 
     return (
@@ -52,6 +48,8 @@ class SectionSkills extends React.Component {
         <h2>{selectedLanguage === 'EN' ? 'These are my skills' : 'Estas son mis habilidades'}</h2>
         <div className={styles.sectionsContainer}>
           {
+            this.state.searchingSkills ?
+            <div style={{color: 'white'}}>{selectedLanguage === 'EN' ? 'Loading Skills...' : 'Cargando Habilidades...'}</div> :
             Object.keys(this.state).map(category => {
               const skills = this.state[category].skills;
               return skills && skills.length ? <SkillCategory key={category} selectedLanguage={selectedLanguage} categoryName={category} category={this.state[category]} /> : null
