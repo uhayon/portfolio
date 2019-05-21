@@ -10,7 +10,7 @@ const SkillCategory = ({ selectedLanguage, categoryName, category }) => {
         <h3>{category.title[selectedLanguage]}</h3>
         <img height='100px' src={require(`../../../../assets/icon-${categoryName}.svg`)} alt={categoryName} />
       </div>
-      <div style={{padding: '1em'}}>{category.skills.join(', ')}</div>
+      <div style={{padding: '1em', margin: '1em'}}>{category.skills.join(', ')}</div>
     </div>
   )
 };
